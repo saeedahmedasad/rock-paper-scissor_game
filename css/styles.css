@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popping", sans-serif;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url(../images/background.jpg);
+  background-size: cover;
+  opacity: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#game {
+  width: 50%;
+  height: 60vh;
+  background: #26262630;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.138);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.072);
+}
+img {
+  width: 200px;
+}
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  background: #26262630;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
+}
+.scores p {
+  display: inline-block;
+  margin: 0 13px;
+  color: white;
+  background: #262626a8;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
+}
+.scores p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0px;
+  height: 190px;
+}
+.choice img {
+  margin-bottom: 5px;
+  height: 150px;
+  border-radius: 20px;
+}
+.choice {
+  text-align: center;
+  background: #262626;
+  color: white;
+  letter-spacing: 3px;
+  margin: 0 40px;
+  border-radius: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.btn {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.153);
+  background: rgba(255, 255, 255, 0.096);
+  backdrop-filter: blur(5px);
+}
+/* ! CSS for JS */
+#rock {
+  transition: transform 0.5s;
+}
+#paper {
+  transition: transform 0.5s;
+}
+#scissor {
+  transition: transform 0.5s;
+}
